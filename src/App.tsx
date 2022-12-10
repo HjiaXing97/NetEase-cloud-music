@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import devRequest from "src/service";
+
 
 const App = () => {
-  const name = "a";
+  useEffect(() => {
+    devRequest.request({
+      url: "/home/multidata",
+      method: "GET",
+    }).then(res => {
+      console.log(res);
+    });
+  }, []);
   return <>div</>;
 };
 
