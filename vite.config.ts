@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "src": _resolve("src"),
-    },
-  },
+      src: _resolve("src")
+    }
+  }
 });
