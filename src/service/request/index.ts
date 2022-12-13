@@ -1,5 +1,5 @@
+import type { AxiosInstance } from "axios";
 import axios from "axios";
-import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 import type { devAxiosRequestConfig } from "../types";
 
 class Request {
