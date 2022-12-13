@@ -1,19 +1,9 @@
-import React, { useEffect } from "react";
-import devRequest from "src/service";
+import React from "react";
+import { useRoutes } from "react-router-dom";
+import routes from "src/router";
 
 const App = () => {
-  useEffect(() => {
-    devRequest
-      .request({
-        url: "/home/multidata",
-        method: "get"
-      })
-      .then((res) => {
-        console.log(res);
-      });
-  }, []);
-
-  return <>div</>;
+  return <div>{useRoutes(routes)}</div>;
 };
 
 export default App;
