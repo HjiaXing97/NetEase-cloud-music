@@ -1,6 +1,6 @@
 /**
- * @Author: Lenovo
- * @createdTime: 2022-12-2022/12/13 12:16
+ * @Author: by Lenovo
+ * @createdTime: 2022/12/14 11:18
  * @description:
  */
 
@@ -11,7 +11,7 @@ interface IProps {
   children?: ReactNode;
 }
 
-const Focus: FC<IProps> = () => {
-  return <>Focus</>;
+const Home: FC<IProps> = () => {
+  return <></>;
 };
-export default memo(Focus);
+export default memo(Home);
